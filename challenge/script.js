@@ -14,4 +14,16 @@ var randomQ = questionsArray[Math.floor(Math.random() * questionsArray.length)];
 function AskQuestion(){
   console.log(randomQ.question);
   console.log(randomQ.answers);
-}
+};
+
+function AnswerInput(){
+  var ask = parseInt(prompt('Please enter the number of your answer'));
+  if(ask === randomQ.correct){
+    console.log('Congrats - that is correct');
+  } else {
+    console.log('Sorry, that is wrong');
+  }
+};
+
+AskQuestion();
+AnswerInput();
