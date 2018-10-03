@@ -10,3 +10,8 @@ var Question = function(question, answers, correct) {
 
 var questionsArray = [q1, q2, q3];
 var randomQ = questionsArray[Math.floor(Math.random() * questionsArray.length)];
+
+function AskQuestion(){
+  console.log(randomQ.question);
+  console.log(randomQ.answers);
+}
